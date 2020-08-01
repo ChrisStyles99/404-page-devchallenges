@@ -20,14 +20,13 @@ nav h1 {
 .container img {
   position: relative;
   width: 80%;
-  height: 50vh;
 }
 
 .text {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: -150px;
+  max-width: 600px;
 }
 
 .text h1 {
@@ -65,7 +64,15 @@ footer {
   top: 100px;
 }
 
-@media (max-width: 1450px) {
+@media (min-width: 1200px) {
+  .text {
+    position: relative;
+    max-width: 50%;
+    left: -150px;
+  }
+}
+
+@media (max-width: 1200px) {
   .container {
     position: relative;
     display: flex;
@@ -78,7 +85,7 @@ footer {
   .container {
     position: relative;
     display: flex;
-    margin-top: 200px;
+    flex-direction: column;
     left: 20px;
   }
 }
@@ -92,6 +99,7 @@ footer {
 
   .text {
     margin-left: 0px;
+    width: 90%;
   }
 
   .text h1 {
